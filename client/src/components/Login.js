@@ -59,6 +59,16 @@ class Login extends Component {
       password: this.state.password
     };
 
+    
+    // First of all. great work and beatiful dashboard of your projecrt. I can play aroundwith it for a good time since it has 
+    // many features. I also like your favicon and all the styling of the website, it matches the theme well.
+    
+    // However, There are some minor changes you might want to consider. The login part has validation for email and password format, 
+    // which is good. It seems that when a user tries to login, it didn't check if the password matches with the stored password in the databse.
+    
+    // In that case, when I register with an email, I could use that email and another random password to login, which seemed a little odd.
+    
+    // Hope you can figure that out in the future projects. Overall, great work! Good luck.
     axios
       .post("/login", userData)
       .then(res => {
